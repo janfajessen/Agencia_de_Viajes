@@ -1,0 +1,22 @@
+{
+  "name": "actividad_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "export NODE_ENV=production || NODE_ENV=production || SET \"NODE_ENV=production\" && node server/",
+    "mongo_start": "/Users/jan/Downloads/mongodb-osx-x86_64-4.0.6/bin/mongod --dbpath=/data/db",
+    "dev": "export NODE_ENV=development || NODE_ENV=development || SET \"NODE_ENV=development\" && nodemon server/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.3",
+    "hbs-utils": "0.0.4",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.4.20"
+  }
+}
