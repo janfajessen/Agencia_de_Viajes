@@ -47,8 +47,6 @@ app.get('/', (req, res) => {
     })
 }); //se metera en las tres llaves de body {{{body}}}
 
-//para que ejecute el archivo y renderice de archivo handlebar a html
-const port = process.env.port || 3000
 
 app.listen(PORT, () => {
     console.log(`http://localhost:${PORT}/`)

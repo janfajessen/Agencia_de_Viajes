@@ -12,6 +12,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: center;
   position: sticky;
   top: 0;
   padding-left: 1em;
@@ -20,18 +21,21 @@ nav {
   background-size: cover;
   background-image: url("../img/nav.png");
 }
-@media (max-width: 1280px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-    background-image: url('../img/menuIcon.png');
-  }
+
+.mobile {
+  flex-direction: column;
 }
+
+.menuIcon {
+  height: 50px;
+}
+
 @media (max-width: 700px) {
   nav {
     font-size: 1em;
   }
 }
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +49,7 @@ nav li {
   text-shadow: 2px 2px 0.1em black, 3px 5px 0.5em black, -2px -2px 0.4em black;
   display: block;
   margin-left: 45px;
-  padding-top: 2.5em;
+  
   list-style: none;
   position: relative;
 }
@@ -72,7 +76,7 @@ a:hover {
 }
 
 .socialMedia {
-  padding-top: 3em;
+ 
   padding-right: 1.8em;
 }
 .socialMedia img {
