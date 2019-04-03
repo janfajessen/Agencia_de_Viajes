@@ -1,5 +1,5 @@
-/* Aquí irán los estilos que añada Jose Antonio*/
-/* ya estoy aquí wey */
+
+
 .qSomos {
     background-size: cover;
     background-image: url('../img/travel_3.jpg');
@@ -20,7 +20,6 @@
     height: 5px;
     width: 50%;
     float: left;
-
 }
 
 .quien h1 {
@@ -28,9 +27,6 @@
     font-style: italic;
  font-size: 2em;
     color: darkblue;
-    
-
-
 }
 
 .quien p {
@@ -42,7 +38,6 @@
 .butto {
     width: 100%;
     text-align: center;
-
 }
 
 .butto button {
@@ -51,13 +46,10 @@
     color: yellow;
     font-weight: bold;
     padding: 10px;
-
-
-
 }
+
 @media (max-width: 1280px) {
 .quien {
    width: 90%;
- 
-}   
+    }   
 }

@@ -1,10 +1,11 @@
 @charset "UTF-8";
-/* Aquí irán los estilos que añada David*/
+
 body {
   font-family: Arial;
   line-height: 1.6;
   background-repeat: no-repeat;
   background-image: url("../img/back.jpeg");
+  background-attachment: fixed;
 }
 
 /* ----NAV---- */
@@ -73,9 +74,23 @@ nav {
   flex-direction: row;
 }
 
+.socialDesktop img {
+  width: 2em;
+  display: flex;
+  margin: 0.2em;
+  float: left;
+}
+
+.socialMobile img {
+  width: 2em;
+  display: flex;
+  margin: 0.2em;
+  float: left;
+}
+
 nav ul {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: row;
   margin: 0 auto;
 }
@@ -85,8 +100,7 @@ nav li {
   color: white;
   text-shadow: 2px 2px 0.1em black, 3px 5px 0.5em black, -2px -2px 0.4em black;
   display: block;
-  margin-left: 45px;
-  
+  margin-left: 0.9em;
   list-style: none;
   position: relative;
 }
@@ -112,19 +126,6 @@ a:hover {
   text-align: center;
 }
 
-.socialDesktop img {
-  width: 2em;
-  display: "flex";
-  margin: 2em;
-  float: right;
-}
-
-.socialMobile img {
-  width: 2em;
-  display: "flex";
-  margin: 2em;
-}
-
 /* HEADER */
 header {
   color: white;
@@ -134,11 +135,13 @@ header h1 {
   margin-left: 30%;
   font-weight: bold;
   font-size: 4em;
+  text-shadow: 2px 2px 0.1em #141939, 3px 5px 0.5em #141939, -2px -2px 0.4em #141939;
 }
 header p {
   margin-left: 30%;
   margin-bottom: 1em;
   font-size: 2.5em;
+  text-shadow: 2px 2px 0.1em #141939, 3px 5px 0.5em #141939, -2px -2px 0.4em #141939;
 }
 header button {
   all: unset;
@@ -155,7 +158,7 @@ header button {
 
 /* CONTACT */
 .contact {
-  display: flex;
+  display: auto;
   flex-direction: row;
   background-color: #fcfcfc;
   padding: 4em 0 6em 1.4em;
@@ -196,6 +199,7 @@ header button {
 .contactForm {
   padding: 0 0 0 4em;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 .contactForm input {
   font-size: 0.8em;
