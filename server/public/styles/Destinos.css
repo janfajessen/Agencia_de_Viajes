@@ -105,7 +105,8 @@
 .imagenes_destinos {
     display: block;
     position: relative;
-    width: 20em; height: 18em;
+    width: 20em; 
+    height: 18em;
     z-index: 0;
 }
 
