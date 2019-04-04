@@ -1,0 +1,46 @@
+
+<h1>LOGIN VIEW</h1>
+
+<form action="/login"
+    method="post">
+
+    <input type="email"
+
+        name="email"
+        value="{{email}}"
+        placeholder="email">
+    <input type="password"
+
+        name="password"
+        value="{{pass}}"
+        placeholder="password">
+    <input type="submit"
+        value="login!">
+</form>
+
+<div class="recovery">
+    <a href="/recovery/">He olvidado mi contraseña</a>
+</div>
+<script>
+    let link = document.querySelector('.recovery a')
+
+    document.querySelector('[name="email"]')
+    .addEventListener('keyup', ev => link.href = '/recovery/' + ev.target.value  )
+</script>
+
+
+<div class="feedback">
+
+    {{#if error}}
+    <div class="error">
+        {{error}}
+    </div>
+    {{/if}}
+
+
+    {{#if message}}
+    <div class="message">
+        {{message}}
+    </div>
+    {{/if}}
+</div>
