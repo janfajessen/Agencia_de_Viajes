@@ -1,31 +1,26 @@
+<div class="square">
+    <h1>RECOVERY</h1>
 
-<h1>RECOVERY</h1>
+    <form action="/recovery" method="post">
 
-<form action="/recovery"
-    method="post">
-
-    <input type="email"
-
-        name="email"
-        value="{{email}}"
-        placeholder="email">
-    <input type="submit"
-        value="recover!">
-</form>
+        <input type="email" name="email" value="{{email}}" placeholder="email">
+        <input type="submit" value="recover!">
+    </form>
 
 
-<div class="feedback">
+    <div class="feedback">
 
-    {{#if error}}
-    <div class="error">
-        {{error}}
+        {{#if error}}
+        <div class="error">
+            {{error}}
+        </div>
+        {{/if}}
+
+
+        {{#if message}}
+        <div class="message">
+            {{message}}
+        </div>
+        {{/if}}
     </div>
-    {{/if}}
-
-
-    {{#if message}}
-    <div class="message">
-        {{message}}
-    </div>
-    {{/if}}
 </div>

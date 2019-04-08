@@ -8,6 +8,44 @@ body {
   background-attachment: fixed;
 }
 
+/* body {
+  font-family: Arial;
+  background-repeat: no-repeat;
+  background-image: url("../img/boarding2.jpg");
+  background-size: 130em
+} */
+
+/* 
+.airp {
+  font-family: Arial;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/boarding2.jpg");
+  background-size: 130em
+} */
+
+.square {
+  margin: 15%;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
+  background-color: rgba(9, 10, 70, 0.8);
+}
+
+input {
+  margin: 7px;
+  padding: 4px;
+  color: #64535f;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border-radius: 20px;
+  align-items: center;
+}
+
+
 /* ----NAV---- */
 nav {
   display: flex;
@@ -289,5 +327,3 @@ footer p {
   background-color: #141939;
   margin: 0 auto;
 }
-
-/*# sourceMappingURL=DavidCSS.css.map */

@@ -8,14 +8,14 @@ const UserSchema = new mongoose.Schema({  //creamos un nuevo esquema que va a se
     // _id,  lo pone de forma automatica
 
 
-    name: {
-        //String
-        type: String,
-        //obligatorio
-        required: true,
-        //maximo 50
-        maxlength: 50
-    },
+    // name: {
+    //     //String
+    //     type: String,
+    //     //obligatorio
+    //     required: true,
+    //     //maximo 50
+    //     maxlength: 50
+    // },
     email: {
         //String
         type: String,
